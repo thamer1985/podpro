@@ -24,6 +24,7 @@ export class TrendsComponent implements OnInit {
       this.trends=data;
     });
   }
+  
 
   /* customSort(event: SortEvent) {
     event.data.sort((data1, data2) => {
