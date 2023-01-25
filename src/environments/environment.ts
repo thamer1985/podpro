@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  theme_light:"assets/layout/styles/theme/saga-blue/theme.css", 
+  theme_dark:"assets/layout/styles/theme/vela-blue/theme.css",
 };
 
 /*
