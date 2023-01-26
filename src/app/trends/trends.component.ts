@@ -20,7 +20,7 @@ export class TrendsComponent implements OnInit {
 
   getRedbubbleTrends(){
     this.redbubbleService.gettrends().subscribe(data=>{
-      console.log(data);
+      console.log('DATA: ',data);
       this.trends=data;
     });
   }

@@ -1,4 +1,9 @@
+
 export interface RedbubbleTrend{
-    label:string,
-    keywords:string
+    RANK:number,
+    TREND:string,
+    COMPETITION:string,
+    KEYWORDS:string,
+    GTREND:string,
+    TM:number
 }

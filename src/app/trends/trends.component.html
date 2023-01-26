@@ -7,18 +7,27 @@
 
 <div class="card">
     <h5>RedBubble Trends</h5>
-    <p-table [value]="trends">
+    <p-table [value]="trends"[paginator]="true" [rows]="10" [showCurrentPageReport]="true" [tableStyle]="{'min-width': '50rem'}"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10,25,50]">
         <ng-template pTemplate="header">
             <tr>
-                <th pSortableColumn="label">Label <p-sortIcon field="label"></p-sortIcon></th>
+                <th pSortableColumn="Rank">Rank <p-sortIcon field="Rank"></p-sortIcon></th>
+                <th pSortableColumn="Trend">Trend <p-sortIcon field="Trend"></p-sortIcon></th>
+                <th pSortableColumn="Competition">Competition <p-sortIcon field="Competition"></p-sortIcon></th>
                 <th pSortableColumn="keywords">Keywords <p-sortIcon field="keywords"></p-sortIcon></th>
+                <th pSortableColumn="GTrend">GTrend <p-sortIcon field="GTrend"></p-sortIcon></th>
+                <th pSortableColumn="TM">TM </th>
 
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-trend>
             <tr>
-                <td>{{trend.label}}</td>
-                <td>{{trend.keywords}}</td>
+                <td>{{trend.RANK}}</td>
+                <td>{{trend.TREND}}</td>
+                <td>{{trend.COMPETITION}}</td>
+                <td>{{trend.KEYWORDS}}</td>
+                <td>{{trend.GTREND}}</td>
+                <td>{{trend.TM}}</td>
 
             </tr>
         </ng-template>
