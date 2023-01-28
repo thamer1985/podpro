@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { AppLayoutComponent } from './layout/app.layout.component';
+import { TestComponent } from './test/test.component';
 import { TrendsComponent } from './trends/trends.component';
 import { TagGeneratorComponent } from './tag-generator/tag-generator.component';
 
@@ -15,12 +16,10 @@ const routes: Routes = [
       },
       {
         path: 'redbubbletrends', component: TrendsComponent
-      }
-      ,
+      },
       {
-        path: 'taggenerator', component: TagGeneratorComponent
+        path: 'redbubbletest', component: TestComponent
       }
-      
     ]
   }];
 

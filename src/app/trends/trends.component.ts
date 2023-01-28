@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { RedbubbleTrend } from '../model/redbubbleTrend';
 import { RedbubbleService } from '../services/redbubble.service';
-import { SortEvent } from 'primeng/api';
+import { ConfirmationService, MessageService, SortEvent } from 'primeng/api';
+import { Table } from 'primeng/table';
+
+
 
 @Component({
   selector: 'app-trends',
@@ -9,8 +12,13 @@ import { SortEvent } from 'primeng/api';
   styleUrls: ['./trends.component.scss']
 })
 export class TrendsComponent implements OnInit {
-
+// lists
   trends:RedbubbleTrend[]=[];
+  selectedProducts: RedbubbleTrend[]=[];
+  //variables
+  @ViewChild('dt')
+  dt: Table | undefined;
+
 
   constructor(private redbubbleService:RedbubbleService) { }
 
@@ -24,28 +32,12 @@ export class TrendsComponent implements OnInit {
       this.trends=data;
     });
   }
-  
-
-  /* customSort(event: SortEvent) {
-    event.data.sort((data1, data2) => {
-        let value1 = data1[event.field];
-        let value2 = data2[event.field];
-        let result = null;
-
-        if (value1 == null && value2 != null)
-            result = -1;
-        else if (value1 != null && value2 == null)
-            result = 1;
-        else if (value1 == null && value2 == null)
-            result = 0;
-        else if (typeof value1 === 'string' && typeof value2 === 'string')
-            result = value1.localeCompare(value2);
-        else
-            result = (value1 < value2) ? -1 : (value1 > value2) ? 1 : 0;
-
-        return (event.order * result);
-    });
-} */
-
+  applyFilterGlobal($event:any, stringVal:string) {
+    console.log('stringVal',this.dt);
+    
+    this.dt!.filterGlobal(($event.target as HTMLInputElement).value.toString(), stringVal);
+  }
 
 }
+
+

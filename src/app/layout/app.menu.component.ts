@@ -176,7 +176,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Popular Keywrods', icon: 'pi pi-fw pi-id-card', routerLink: ['/popularkeywrods'] },
                     { label: 'Tag Generator', icon: 'pi pi-fw pi-check-square', routerLink: ['/taggenerator'] },
-                    { label: 'Top Trends', icon: 'pi pi-fw pi-bookmark', routerLink: ['/redbubbletrends'] },
+                    { label: 'redbubbletest', icon: 'pi pi-fw pi-bookmark', routerLink: ['/redbubbletest'] },
                     { label: 'Design Maker', icon: 'pi pi-fw pi-exclamation-circle', routerLink: ['/designmaker'] },
 
                 ]
