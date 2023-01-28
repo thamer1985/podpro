@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { AppLayoutComponent } from './layout/app.layout.component';
+import { TestComponent } from './test/test.component';
 import { TrendsComponent } from './trends/trends.component';
 
 const routes: Routes = [
@@ -14,8 +15,10 @@ const routes: Routes = [
       },
       {
         path: 'redbubbletrends', component: TrendsComponent
+      },
+      {
+        path: 'redbubbletest', component: TestComponent
       }
-      
     ]
   }];
 
