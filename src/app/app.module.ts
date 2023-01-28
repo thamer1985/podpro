@@ -8,12 +8,14 @@ import { LandingComponent } from './landing/landing.component';
 import { AppLayoutModule } from './layout/app.layout.module';
 import { TrendsComponent } from './trends/trends.component';
 import {TableModule} from 'primeng/table';
+import { TagGeneratorComponent } from './tag-generator/tag-generator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    TrendsComponent
+    TrendsComponent,
+    TagGeneratorComponent
   ],
   imports: [
     BrowserModule,
