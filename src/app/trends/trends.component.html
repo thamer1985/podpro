@@ -9,7 +9,7 @@
 <div class="card">
    
 
-    <p-table #dt [value]="trends" [rows]="10" [paginator]="true" [globalFilterFields]="['Keywords']"
+    <p-table #dt [value]="trends" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
         [(selection)]="selectedProducts" [rowHover]="true" dataKey="id"
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
         <ng-template pTemplate="caption">
@@ -27,11 +27,11 @@
         <ng-template pTemplate="header">
             <tr>
                
-                <th pSortableColumn="rank">Rank <p-sortIcon field="rank"></p-sortIcon></th>
-                <th pSortableColumn="trend">Trend<p-sortIcon field="trend"></p-sortIcon></th>
-                <th pSortableColumn="Competition">Competition <p-sortIcon field="Competition"></p-sortIcon></th>
-                <th pSortableColumn="Keywords">Keywords <p-sortIcon field="Keywords"></p-sortIcon></th>
-                <th pSortableColumn="GTrend">GTrend<p-sortIcon field="GTrend"></p-sortIcon></th>
+                <th pSortableColumn="RANK">Rank <p-sortIcon field="RANK"></p-sortIcon></th>
+                <th pSortableColumn="TREND">Trend<p-sortIcon field="TREND"></p-sortIcon></th>
+                <th pSortableColumn="COMPETITION">Competition <p-sortIcon field="COMPETITION"></p-sortIcon></th>
+                <th pSortableColumn="KEYWORDS">Keywords <p-sortIcon field="KEYWORDS"></p-sortIcon></th>
+                <th pSortableColumn="GTREND">GTrend<p-sortIcon field="GTREND"></p-sortIcon></th>
                 <th pSortableColumn="TM">TM<p-sortIcon field="TM"></p-sortIcon></th>
                 
             </tr>
@@ -56,7 +56,7 @@
         </ng-template>
         <ng-template pTemplate="summary">
             <div class="p-d-flex p-ai-center p-jc-between">
-                In total there are {{trends ? trends.length : 0 }} products.
+                In total there are {{trends ? trends.length : 0 }} trends.
             </div>
         </ng-template>
     </p-table>

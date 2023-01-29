@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { RedbubbleTrend } from '../model/redbubbleTrend';
 import { RedbubbleService } from '../services/redbubble.service';
-import { ConfirmationService, MessageService, SortEvent } from 'primeng/api';
 import { Table } from 'primeng/table';
 
 

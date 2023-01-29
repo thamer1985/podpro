@@ -30,14 +30,14 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TestComponent } from './test/test.component';
+import { TagGeneratorComponent } from './tag-generator/tag-generator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     TrendsComponent,
-    TestComponent
+    TagGeneratorComponent
   ],
   imports: [
     BrowserModule,
