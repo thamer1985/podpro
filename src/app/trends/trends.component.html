@@ -4,10 +4,11 @@
 <h1> {{trend.label}}</h1>
 <p> {{trend.keywords}}</p>
 </div> -->
-
+<!-- <span class="badge text-bg-success bi-archive"> TM</span> -->
 
 <div class="card">
    
+
 
     <p-table #dt [value]="trends" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
         [(selection)]="selectedProducts" [rowHover]="true" dataKey="id"
@@ -29,11 +30,10 @@
                
                 <th pSortableColumn="RANK">Rank <p-sortIcon field="RANK"></p-sortIcon></th>
                 <th pSortableColumn="TREND">Trend<p-sortIcon field="TREND"></p-sortIcon></th>
-                <th pSortableColumn="COMPETITION">Competition <p-sortIcon field="COMPETITION"></p-sortIcon></th>
+                <th pSortableColumn="COMPETITION" style="width: 120px;">Competition <p-sortIcon field="COMPETITION"></p-sortIcon></th>
                 <th pSortableColumn="KEYWORDS">Keywords <p-sortIcon field="KEYWORDS"></p-sortIcon></th>
                 <th pSortableColumn="GTREND">GTrend<p-sortIcon field="GTREND"></p-sortIcon></th>
                 <th pSortableColumn="TM">TM<p-sortIcon field="TM"></p-sortIcon></th>
-                
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-trend>
@@ -41,11 +41,32 @@
   
                 <td >{{trend.RANK}}</td>
                 <td>{{trend.TREND}}</td>
-                <td>{{trend.COMPETITION}}</td>
+                <td>
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                    
+                    
+                        <div class="d-flex justify-content-end col-6">
+                            
+                            {{trend.COMPETITION}}
+                        </div>
+                        <div>
+                            <button class="btn" >
+                                <a href="https://www.redbubble.com/fr/shop/?query={{trend.KEYWORDS.replaceAll(' ','+')}}" target="_blank">
+                                <img src="./../../assets/images/rb.png" width="25" height="25"></a>
+                            </button>
+                        </div>
+                    </div>
+                </td>
                 <td>{{trend.KEYWORDS}}</td>
                 <td>{{trend.GTREND}}</td>
-                <td>{{trend.TM}}</td>
-                
+                <td>
+
+                    
+                    
+                    <i class="bi-badge-tm " [ngStyle]="{'color': (trend.TM==0) ? 'rgb(223, 234, 68)': (trend.TM==-1)? 'rgb(228, 62, 62)' : 'rgb(36, 217, 120)'}" style="font-size: large;"> </i>
+                   
+                    
+                </td>
                 
                 <!-- <td><span [class]="'product-badge status-' + trend.inventoryStatus.toLowerCase()">{{trend.inventoryStatus}}</span></td> -->
                 <!-- <td>
@@ -61,6 +82,24 @@
         </ng-template>
     </p-table>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
 <p-dialog [(visible)]="productDialog" [style]="{width: '450px'}" header="Product Details" [modal]="true" styleClass="p-fluid">
     <ng-template pTemplate="content">

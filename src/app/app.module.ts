@@ -31,7 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TagGeneratorComponent } from './tag-generator/tag-generator.component';
-
+import {BadgeModule} from 'primeng/badge';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +65,7 @@ import { TagGeneratorComponent } from './tag-generator/tag-generator.component';
     InputTextareaModule,
     BrowserAnimationsModule,
     FormsModule,
+    BadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
