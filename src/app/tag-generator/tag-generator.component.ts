@@ -11,6 +11,12 @@ export class TagGeneratorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.scrapeData();
   }
 
+  scrapeData(){
+
+
+  }
 }
+
