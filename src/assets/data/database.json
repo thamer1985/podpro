@@ -17,11 +17,11 @@
     },
     {
         "RANK": 3,
-        "TREND": "",
+        "TREND": -1,
         "COMPETITION": 13431,
         "KEYWORDS": "wednesday addams",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=wednesday%20addams",
-        "TM": -1
+        "TM": 0
     },
     {
         "RANK": 4,
@@ -49,7 +49,7 @@
     },
     {
         "RANK": 7,
-        "TREND": "",
+        "TREND": -1,
         "COMPETITION": 9325,
         "KEYWORDS": "stranger things",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=stranger%20things",
@@ -73,7 +73,7 @@
     },
     {
         "RANK": 10,
-        "TREND": "",
+        "TREND": -3,
         "COMPETITION": 76332,
         "KEYWORDS": "taylor swift",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=taylor%20swift",
@@ -81,7 +81,7 @@
     },
     {
         "RANK": 11,
-        "TREND": "",
+        "TREND": -6,
         "COMPETITION": 517283,
         "KEYWORDS": "dogs pets",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=dogs%20pets",
@@ -113,7 +113,7 @@
     },
     {
         "RANK": 15,
-        "TREND": "",
+        "TREND": -6,
         "COMPETITION": 3911745,
         "KEYWORDS": "christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=christmas",
@@ -153,7 +153,7 @@
     },
     {
         "RANK": 20,
-        "TREND": "",
+        "TREND": -10,
         "COMPETITION": 1747705,
         "KEYWORDS": "animes",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=animes",
@@ -185,7 +185,7 @@
     },
     {
         "RANK": 24,
-        "TREND": "",
+        "TREND": -8,
         "COMPETITION": 3729,
         "KEYWORDS": "joe biden thanksgiving",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=joe%20biden%20thanksgiving",
@@ -361,7 +361,7 @@
     },
     {
         "RANK": 46,
-        "TREND": "",
+        "TREND": -9,
         "COMPETITION": 582334,
         "KEYWORDS": "cats pets",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=cats%20pets",
@@ -841,7 +841,7 @@
     },
     {
         "RANK": 106,
-        "TREND": "",
+        "TREND": -3,
         "COMPETITION": 62380,
         "KEYWORDS": "f1",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=f1",
@@ -889,7 +889,7 @@
     },
     {
         "RANK": 112,
-        "TREND": "",
+        "TREND": -15,
         "COMPETITION": 6413,
         "KEYWORDS": "jenna ortega",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=jenna%20ortega",
@@ -1017,7 +1017,7 @@
     },
     {
         "RANK": 128,
-        "TREND": "",
+        "TREND": -15,
         "COMPETITION": 85803,
         "KEYWORDS": "dungeons and dragons",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=dungeons%20and%20dragons",
@@ -1233,7 +1233,7 @@
     },
     {
         "RANK": 155,
-        "TREND": "",
+        "TREND": -67,
         "COMPETITION": 3319,
         "KEYWORDS": "all i want for christmas is more coffee",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=all%20i%20want%20for%20christmas%20is%20more%20coffee",
@@ -1489,7 +1489,7 @@
     },
     {
         "RANK": 187,
-        "TREND": "",
+        "TREND": -145,
         "COMPETITION": 2376559,
         "KEYWORDS": "dogs",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=dogs",
@@ -1865,7 +1865,7 @@
     },
     {
         "RANK": 234,
-        "TREND": "",
+        "TREND": -134,
         "COMPETITION": 3149,
         "KEYWORDS": "nevermore academy",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=nevermore%20academy",
@@ -1881,7 +1881,7 @@
     },
     {
         "RANK": 236,
-        "TREND": "",
+        "TREND": -69,
         "COMPETITION": 16970,
         "KEYWORDS": "grinch",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=grinch",
@@ -1913,7 +1913,7 @@
     },
     {
         "RANK": 240,
-        "TREND": "",
+        "TREND": -16,
         "COMPETITION": 11707,
         "KEYWORDS": "arctic monkeys",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=arctic%20monkeys",
@@ -1945,7 +1945,7 @@
     },
     {
         "RANK": 244,
-        "TREND": "",
+        "TREND": -56,
         "COMPETITION": 1298,
         "KEYWORDS": "keep calm and support morocco",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=keep%20calm%20and%20support%20morocco",
@@ -2241,7 +2241,7 @@
     },
     {
         "RANK": 281,
-        "TREND": "",
+        "TREND": -41,
         "COMPETITION": "980",
         "KEYWORDS": "gavi",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=gavi",
@@ -2265,7 +2265,7 @@
     },
     {
         "RANK": 284,
-        "TREND": "",
+        "TREND": -105,
         "COMPETITION": 24027,
         "KEYWORDS": "australian christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=australian%20christmas",
@@ -2297,7 +2297,7 @@
     },
     {
         "RANK": 288,
-        "TREND": "",
+        "TREND": -39,
         "COMPETITION": 6942,
         "KEYWORDS": "what we do in the shadows",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=what%20we%20do%20in%20the%20shadows",
@@ -2417,7 +2417,7 @@
     },
     {
         "RANK": 303,
-        "TREND": "",
+        "TREND": -147,
         "COMPETITION": 2038702,
         "KEYWORDS": "funny christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=funny%20christmas",
@@ -2449,7 +2449,7 @@
     },
     {
         "RANK": 307,
-        "TREND": "",
+        "TREND": -142,
         "COMPETITION": 3934,
         "KEYWORDS": "christmas morning squad family xmas holidays",
         "GTREND": "-",
@@ -2545,7 +2545,7 @@
     },
     {
         "RANK": 319,
-        "TREND": "",
+        "TREND": -2,
         "COMPETITION": 1466,
         "KEYWORDS": "funny snowman with mustache and carrot",
         "GTREND": "-",
@@ -2585,7 +2585,7 @@
     },
     {
         "RANK": 324,
-        "TREND": "",
+        "TREND": -23,
         "COMPETITION": 1186,
         "KEYWORDS": "sorry i tooted it came out of my brass",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=sorry%20i%20tooted%20it%20came%20out%20of%20my%20brass",
@@ -2881,7 +2881,7 @@
     },
     {
         "RANK": 361,
-        "TREND": "",
+        "TREND": -8,
         "COMPETITION": 5209,
         "KEYWORDS": "wednesday addams netflix",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=wednesday%20addams%20netflix",
@@ -2961,7 +2961,7 @@
     },
     {
         "RANK": 371,
-        "TREND": "",
+        "TREND": -25,
         "COMPETITION": 1906,
         "KEYWORDS": "big lez show",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=big%20lez%20show",
@@ -3057,7 +3057,7 @@
     },
     {
         "RANK": 383,
-        "TREND": "",
+        "TREND": -131,
         "COMPETITION": 8934,
         "KEYWORDS": "inappropriate christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=inappropriate%20christmas",
@@ -3137,7 +3137,7 @@
     },
     {
         "RANK": 393,
-        "TREND": "",
+        "TREND": -54,
         "COMPETITION": 10610,
         "KEYWORDS": "retro vintage pink santa claus",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=retro%20vintage%20pink%20santa%20claus",
@@ -3305,7 +3305,7 @@
     },
     {
         "RANK": 414,
-        "TREND": "",
+        "TREND": -127,
         "COMPETITION": 5701,
         "KEYWORDS": "national lampoons christmas vacation",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=national%20lampoons%20christmas%20vacation",
@@ -3865,7 +3865,7 @@
     },
     {
         "RANK": 484,
-        "TREND": "",
+        "TREND": -74,
         "COMPETITION": 1163,
         "KEYWORDS": "just a nurse who loves hiking",
         "GTREND": "-",
@@ -4009,7 +4009,7 @@
     },
     {
         "RANK": 502,
-        "TREND": "",
+        "TREND": -7,
         "COMPETITION": 19715,
         "KEYWORDS": "warrior cats",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=warrior%20cats",
@@ -4121,7 +4121,7 @@
     },
     {
         "RANK": 516,
-        "TREND": "",
+        "TREND": -5,
         "COMPETITION": "637",
         "KEYWORDS": "craftee",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=craftee",
@@ -4177,7 +4177,7 @@
     },
     {
         "RANK": 523,
-        "TREND": "",
+        "TREND": -234,
         "COMPETITION": 8187,
         "KEYWORDS": "enjoy the little things in life",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=enjoy%20the%20little%20things%20in%20life",
@@ -4305,7 +4305,7 @@
     },
     {
         "RANK": 539,
-        "TREND": "",
+        "TREND": -182,
         "COMPETITION": 3019,
         "KEYWORDS": "animes nagatoro",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=animes%20nagatoro",
@@ -4473,7 +4473,7 @@
     },
     {
         "RANK": 560,
-        "TREND": "",
+        "TREND": -79,
         "COMPETITION": 1075,
         "KEYWORDS": "yes i would like to science please",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=yes%20i%20would%20like%20to%20science%20please",
@@ -4569,7 +4569,7 @@
     },
     {
         "RANK": 572,
-        "TREND": "",
+        "TREND": -126,
         "COMPETITION": 8147,
         "KEYWORDS": "happy new year usa",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=happy%20new%20year%20usa",
@@ -4953,7 +4953,7 @@
     },
     {
         "RANK": 620,
-        "TREND": "",
+        "TREND": -6,
         "COMPETITION": 3749,
         "KEYWORDS": "its always sunny in philadelphia",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=its%20always%20sunny%20in%20philadelphia",
@@ -5057,7 +5057,7 @@
     },
     {
         "RANK": 633,
-        "TREND": "",
+        "TREND": -43,
         "COMPETITION": 2531799,
         "KEYWORDS": "kids",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=kids",
@@ -5249,7 +5249,7 @@
     },
     {
         "RANK": 657,
-        "TREND": "",
+        "TREND": -156,
         "COMPETITION": 5398,
         "KEYWORDS": "die hard christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=die%20hard%20christmas",
@@ -5393,7 +5393,7 @@
     },
     {
         "RANK": 675,
-        "TREND": "",
+        "TREND": -14,
         "COMPETITION": 3721,
         "KEYWORDS": "ajr",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=ajr",
@@ -5713,7 +5713,7 @@
     },
     {
         "RANK": 715,
-        "TREND": "",
+        "TREND": -176,
         "COMPETITION": 13703,
         "KEYWORDS": "addams family",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=addams%20family",
@@ -5785,7 +5785,7 @@
     },
     {
         "RANK": 724,
-        "TREND": "",
+        "TREND": -64,
         "COMPETITION": 1080,
         "KEYWORDS": "muppets christmas carol",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=muppets%20christmas%20carol",
@@ -6025,7 +6025,7 @@
     },
     {
         "RANK": 754,
-        "TREND": "",
+        "TREND": -331,
         "COMPETITION": 1234,
         "KEYWORDS": "rice is my love language",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=rice%20is%20my%20love%20language",
@@ -6281,7 +6281,7 @@
     },
     {
         "RANK": 786,
-        "TREND": "",
+        "TREND": -94,
         "COMPETITION": 5122,
         "KEYWORDS": "greggs",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=greggs",
@@ -6369,7 +6369,7 @@
     },
     {
         "RANK": 797,
-        "TREND": "",
+        "TREND": -175,
         "COMPETITION": 2322,
         "KEYWORDS": "snow day supporter",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=snow%20day%20supporter",
@@ -6433,7 +6433,7 @@
     },
     {
         "RANK": 805,
-        "TREND": "",
+        "TREND": -517,
         "COMPETITION": 354345,
         "KEYWORDS": "dogs christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=dogs%20christmas",
@@ -6676,7 +6676,7 @@
         "TREND": 871,
         "COMPETITION": 1022,
         "KEYWORDS": "bocchi the rock",
-        "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=bocchi%20the%20rock",
+        "GTREND": "-",
         "TM": 1
     },
     {
@@ -6929,7 +6929,7 @@
     },
     {
         "RANK": 867,
-        "TREND": "",
+        "TREND": -398,
         "COMPETITION": 1021,
         "KEYWORDS": "i survived the great war",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=i%20survived%20the%20great%20war",
@@ -6937,7 +6937,7 @@
     },
     {
         "RANK": 868,
-        "TREND": "",
+        "TREND": -75,
         "COMPETITION": 1083,
         "KEYWORDS": "kath and kim",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=kath%20and%20kim",
@@ -7097,7 +7097,7 @@
     },
     {
         "RANK": 888,
-        "TREND": "",
+        "TREND": -115,
         "COMPETITION": 220000,
         "KEYWORDS": "hip hop",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=hip%20hop",
@@ -7201,7 +7201,7 @@
     },
     {
         "RANK": 901,
-        "TREND": "",
+        "TREND": -134,
         "COMPETITION": "259",
         "KEYWORDS": "evony",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=evony",
@@ -7329,7 +7329,7 @@
     },
     {
         "RANK": 917,
-        "TREND": "",
+        "TREND": -28,
         "COMPETITION": 4734,
         "KEYWORDS": "wordle",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=wordle",
@@ -7593,7 +7593,7 @@
     },
     {
         "RANK": 950,
-        "TREND": "",
+        "TREND": -150,
         "COMPETITION": 1711,
         "KEYWORDS": "tucker carlson",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=tucker%20carlson",
@@ -7697,7 +7697,7 @@
     },
     {
         "RANK": 963,
-        "TREND": "",
+        "TREND": -395,
         "COMPETITION": "717",
         "KEYWORDS": "goncharov",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=goncharov",
@@ -8409,7 +8409,7 @@
     },
     {
         "RANK": 1052,
-        "TREND": "",
+        "TREND": -465,
         "COMPETITION": 5712,
         "KEYWORDS": "wednesday netflix",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=wednesday%20netflix",
@@ -9121,7 +9121,7 @@
     },
     {
         "RANK": 1141,
-        "TREND": "",
+        "TREND": -488,
         "COMPETITION": 1124,
         "KEYWORDS": "sleeping hunk",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=sleeping%20hunk",
@@ -9761,7 +9761,7 @@
     },
     {
         "RANK": 1221,
-        "TREND": "",
+        "TREND": -256,
         "COMPETITION": 2902,
         "KEYWORDS": "the moon made me do it",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=the%20moon%20made%20me%20do%20it",
@@ -9809,7 +9809,7 @@
     },
     {
         "RANK": 1227,
-        "TREND": "",
+        "TREND": -155,
         "COMPETITION": 161935,
         "KEYWORDS": "christmas vacation",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=christmas%20vacation",
@@ -11793,7 +11793,7 @@
     },
     {
         "RANK": 1475,
-        "TREND": "",
+        "TREND": -65,
         "COMPETITION": "958",
         "KEYWORDS": "funny trumpet sarcastic trumpet player jazz band trombone",
         "GTREND": "-",
@@ -11825,7 +11825,7 @@
     },
     {
         "RANK": 1479,
-        "TREND": "",
+        "TREND": -497,
         "COMPETITION": 2887,
         "KEYWORDS": "love over hate",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=love%20over%20hate",
@@ -12017,7 +12017,7 @@
     },
     {
         "RANK": 1503,
-        "TREND": "",
+        "TREND": -619,
         "COMPETITION": 175421,
         "KEYWORDS": "ugly christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=ugly%20christmas",
@@ -12073,7 +12073,7 @@
     },
     {
         "RANK": 1510,
-        "TREND": "",
+        "TREND": -39,
         "COMPETITION": 8056,
         "KEYWORDS": "the grinch",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=the%20grinch",
@@ -12369,7 +12369,7 @@
     },
     {
         "RANK": 1547,
-        "TREND": "",
+        "TREND": -433,
         "COMPETITION": "797",
         "KEYWORDS": "gingers are for life not just for christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=gingers%20are%20for%20life%20not%20just%20for%20christmas",
@@ -13129,7 +13129,7 @@
     },
     {
         "RANK": 1642,
-        "TREND": "",
+        "TREND": -456,
         "COMPETITION": 1150,
         "KEYWORDS": "i have neither the time nor the crayons to explain this to you",
         "GTREND": "-",
@@ -13361,7 +13361,7 @@
     },
     {
         "RANK": 1671,
-        "TREND": "",
+        "TREND": -356,
         "COMPETITION": "216",
         "KEYWORDS": "stromae",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=stromae",
@@ -13601,7 +13601,7 @@
     },
     {
         "RANK": 1701,
-        "TREND": "",
+        "TREND": -1005,
         "COMPETITION": 1641,
         "KEYWORDS": "this shade of black really brings out the color of my soul",
         "GTREND": "-",
@@ -14009,7 +14009,7 @@
     },
     {
         "RANK": 1752,
-        "TREND": "",
+        "TREND": -56,
         "COMPETITION": "539",
         "KEYWORDS": "nicola sturgeon",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=nicola%20sturgeon",
@@ -14025,7 +14025,7 @@
     },
     {
         "RANK": 1754,
-        "TREND": "",
+        "TREND": -195,
         "COMPETITION": 1285,
         "KEYWORDS": "cat shitpost",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=cat%20shitpost",
@@ -14033,7 +14033,7 @@
     },
     {
         "RANK": 1755,
-        "TREND": "",
+        "TREND": -166,
         "COMPETITION": "840",
         "KEYWORDS": "zebra pattern number",
         "GTREND": "-",
@@ -14489,7 +14489,7 @@
     },
     {
         "RANK": 1812,
-        "TREND": "",
+        "TREND": -158,
         "COMPETITION": 869606,
         "KEYWORDS": "xmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=xmas",
@@ -15521,7 +15521,7 @@
     },
     {
         "RANK": 1941,
-        "TREND": "",
+        "TREND": -167,
         "COMPETITION": 14392,
         "KEYWORDS": "fox news",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=fox%20news",
@@ -16001,7 +16001,7 @@
     },
     {
         "RANK": 2001,
-        "TREND": "",
+        "TREND": -267,
         "COMPETITION": 5601,
         "KEYWORDS": "krampus",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=krampus",
@@ -16097,7 +16097,7 @@
     },
     {
         "RANK": 2013,
-        "TREND": "",
+        "TREND": -112,
         "COMPETITION": 11454,
         "KEYWORDS": "fifa world cup 2022",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=fifa%20world%20cup%202022",
@@ -16169,7 +16169,7 @@
     },
     {
         "RANK": 2022,
-        "TREND": "",
+        "TREND": -77,
         "COMPETITION": 2052,
         "KEYWORDS": "santa is my homeboy",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=santa%20is%20my%20homeboy",
@@ -16225,7 +16225,7 @@
     },
     {
         "RANK": 2029,
-        "TREND": "",
+        "TREND": -471,
         "COMPETITION": 5457,
         "KEYWORDS": "wednesday addams jenna ortega",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=wednesday%20addams%20jenna%20ortega",
@@ -16265,7 +16265,7 @@
     },
     {
         "RANK": 2034,
-        "TREND": "",
+        "TREND": -963,
         "COMPETITION": 31224,
         "KEYWORDS": "christmas jumper",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=christmas%20jumper",
@@ -17257,7 +17257,7 @@
     },
     {
         "RANK": 2158,
-        "TREND": "",
+        "TREND": -598,
         "COMPETITION": "653",
         "KEYWORDS": "meowtallica",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=meowtallica",
@@ -17281,7 +17281,7 @@
     },
     {
         "RANK": 2161,
-        "TREND": "",
+        "TREND": -62,
         "COMPETITION": 1582,
         "KEYWORDS": "great british baking show",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=great%20british%20baking%20show",
@@ -17353,7 +17353,7 @@
     },
     {
         "RANK": 2170,
-        "TREND": "",
+        "TREND": -562,
         "COMPETITION": "248",
         "KEYWORDS": "nick fuentes",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=nick%20fuentes",
@@ -17497,7 +17497,7 @@
     },
     {
         "RANK": 2188,
-        "TREND": "",
+        "TREND": -403,
         "COMPETITION": "312",
         "KEYWORDS": "uva strong",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=uva%20strong",
@@ -18081,7 +18081,7 @@
     },
     {
         "RANK": 2261,
-        "TREND": "",
+        "TREND": -325,
         "COMPETITION": "482",
         "KEYWORDS": "grinch ew people",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=grinch%20ew%20people",
@@ -18281,7 +18281,7 @@
     },
     {
         "RANK": 2286,
-        "TREND": "",
+        "TREND": -518,
         "COMPETITION": 131999,
         "KEYWORDS": "ugly christmas sweater",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=ugly%20christmas%20sweater",
@@ -18825,7 +18825,7 @@
     },
     {
         "RANK": 2354,
-        "TREND": "",
+        "TREND": -201,
         "COMPETITION": 408756,
         "KEYWORDS": "dogs pet-bandanas",
         "GTREND": "-",
@@ -19425,7 +19425,7 @@
     },
     {
         "RANK": 2429,
-        "TREND": "",
+        "TREND": -963,
         "COMPETITION": 28049,
         "KEYWORDS": "funny secret santa",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=funny%20secret%20santa",
@@ -20017,7 +20017,7 @@
     },
     {
         "RANK": 2503,
-        "TREND": "",
+        "TREND": -105,
         "COMPETITION": "710",
         "KEYWORDS": "peter kay",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=peter%20kay",
@@ -20129,7 +20129,7 @@
     },
     {
         "RANK": 2517,
-        "TREND": "",
+        "TREND": -64,
         "COMPETITION": "533",
         "KEYWORDS": "got any grapes",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=got%20any%20grapes",
@@ -20553,7 +20553,7 @@
     },
     {
         "RANK": 2570,
-        "TREND": "",
+        "TREND": -15,
         "COMPETITION": 1825,
         "KEYWORDS": "keith urban",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=keith%20urban",
@@ -20969,7 +20969,7 @@
     },
     {
         "RANK": 2622,
-        "TREND": "",
+        "TREND": -431,
         "COMPETITION": 197306,
         "KEYWORDS": "christmas sweater",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=christmas%20sweater",
@@ -20985,7 +20985,7 @@
     },
     {
         "RANK": 2624,
-        "TREND": "",
+        "TREND": -1062,
         "COMPETITION": "795",
         "KEYWORDS": "hoofing",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=hoofing",
@@ -21681,7 +21681,7 @@
     },
     {
         "RANK": 2711,
-        "TREND": "",
+        "TREND": -397,
         "COMPETITION": 18786,
         "KEYWORDS": "the office christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=the%20office%20christmas",
@@ -22625,7 +22625,7 @@
     },
     {
         "RANK": 2829,
-        "TREND": "",
+        "TREND": -60,
         "COMPETITION": 274620,
         "KEYWORDS": "ornament",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=ornament",
@@ -23577,7 +23577,7 @@
     },
     {
         "RANK": 2948,
-        "TREND": "",
+        "TREND": -162,
         "COMPETITION": "388",
         "KEYWORDS": "zxcz",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=zxcz",
@@ -23697,7 +23697,7 @@
     },
     {
         "RANK": 2963,
-        "TREND": "",
+        "TREND": -848,
         "COMPETITION": "824",
         "KEYWORDS": "we are all human beans",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=we%20are%20all%20human%20beans",
@@ -24001,7 +24001,7 @@
     },
     {
         "RANK": 3001,
-        "TREND": "",
+        "TREND": -144,
         "COMPETITION": "266",
         "KEYWORDS": "slumberland",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=slumberland",
@@ -24017,7 +24017,7 @@
     },
     {
         "RANK": 3003,
-        "TREND": "",
+        "TREND": -433,
         "COMPETITION": 274620,
         "KEYWORDS": "ornaments",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=ornaments",
@@ -24257,7 +24257,7 @@
     },
     {
         "RANK": 3033,
-        "TREND": "",
+        "TREND": -1696,
         "COMPETITION": 10421,
         "KEYWORDS": "dogs are my favorite people",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=dogs%20are%20my%20favorite%20people",
@@ -25113,7 +25113,7 @@
     },
     {
         "RANK": 3140,
-        "TREND": "",
+        "TREND": -119,
         "COMPETITION": 4021,
         "KEYWORDS": "inappropriate christmas sweaters",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=inappropriate%20christmas%20sweaters",
@@ -26761,7 +26761,7 @@
     },
     {
         "RANK": 3346,
-        "TREND": "",
+        "TREND": -31,
         "COMPETITION": "413",
         "KEYWORDS": "curse of oak island",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=curse%20of%20oak%20island",
@@ -27833,7 +27833,7 @@
     },
     {
         "RANK": 3480,
-        "TREND": "",
+        "TREND": -238,
         "COMPETITION": "626",
         "KEYWORDS": "the sleeping hunk",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=the%20sleeping%20hunk",
@@ -28329,7 +28329,7 @@
     },
     {
         "RANK": 3542,
-        "TREND": "",
+        "TREND": -421,
         "COMPETITION": "455",
         "KEYWORDS": "roy keane",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=roy%20keane",
@@ -28761,7 +28761,7 @@
     },
     {
         "RANK": 3596,
-        "TREND": "",
+        "TREND": -114,
         "COMPETITION": 49958,
         "KEYWORDS": "naughty christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=naughty%20christmas",
@@ -29281,7 +29281,7 @@
     },
     {
         "RANK": 3661,
-        "TREND": "",
+        "TREND": -1456,
         "COMPETITION": "888",
         "KEYWORDS": "violet and scarlet",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=violet%20and%20scarlet",
@@ -30081,7 +30081,7 @@
     },
     {
         "RANK": 3761,
-        "TREND": "",
+        "TREND": -75,
         "COMPETITION": 24703,
         "KEYWORDS": "hanukkah",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=hanukkah",
@@ -30201,7 +30201,7 @@
     },
     {
         "RANK": 3776,
-        "TREND": "",
+        "TREND": -577,
         "COMPETITION": 7764,
         "KEYWORDS": "buddy the elf",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=buddy%20the%20elf",
@@ -30409,7 +30409,7 @@
     },
     {
         "RANK": 3802,
-        "TREND": "",
+        "TREND": -454,
         "COMPETITION": "394",
         "KEYWORDS": "lane kiffin sip",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=lane%20kiffin%20sip",
@@ -30825,7 +30825,7 @@
     },
     {
         "RANK": 3854,
-        "TREND": "",
+        "TREND": -1736,
         "COMPETITION": "821",
         "KEYWORDS": "yes i do have a retirement plan i plan on cycling",
         "GTREND": "-",
@@ -31441,7 +31441,7 @@
     },
     {
         "RANK": 3931,
-        "TREND": "",
+        "TREND": -1715,
         "COMPETITION": "748",
         "KEYWORDS": "this is my it s too hot for christmas sweaters funny santa christmas",
         "GTREND": "-",
@@ -33137,7 +33137,7 @@
     },
     {
         "RANK": 4143,
-        "TREND": "",
+        "TREND": -1846,
         "COMPETITION": "283",
         "KEYWORDS": "bulma and chichi",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=bulma%20and%20chichi",
@@ -33761,7 +33761,7 @@
     },
     {
         "RANK": 4221,
-        "TREND": "",
+        "TREND": -491,
         "COMPETITION": 136455,
         "KEYWORDS": "ugly sweater",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=ugly%20sweater",
@@ -34129,7 +34129,7 @@
     },
     {
         "RANK": 4267,
-        "TREND": "",
+        "TREND": -953,
         "COMPETITION": 3684,
         "KEYWORDS": "nagatoro",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=nagatoro",
@@ -34545,7 +34545,7 @@
     },
     {
         "RANK": 4319,
-        "TREND": "",
+        "TREND": -1520,
         "COMPETITION": 18818,
         "KEYWORDS": "funny christmas jumper",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=funny%20christmas%20jumper",
@@ -36353,7 +36353,7 @@
     },
     {
         "RANK": 4545,
-        "TREND": "",
+        "TREND": -75,
         "COMPETITION": "563",
         "KEYWORDS": "cocaine christmas",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=cocaine%20christmas",
@@ -36569,7 +36569,7 @@
     },
     {
         "RANK": 4572,
-        "TREND": "",
+        "TREND": -2665,
         "COMPETITION": "740",
         "KEYWORDS": "vintage usa flag fathers day fishing reel cool",
         "GTREND": "-",
@@ -36969,7 +36969,7 @@
     },
     {
         "RANK": 4622,
-        "TREND": "",
+        "TREND": -173,
         "COMPETITION": "593",
         "KEYWORDS": "tgf childish",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=tgf%20childish",
@@ -37153,7 +37153,7 @@
     },
     {
         "RANK": 4645,
-        "TREND": "",
+        "TREND": -990,
         "COMPETITION": 2002,
         "KEYWORDS": "cute and lovely animals with christmas",
         "GTREND": "-",
@@ -38265,7 +38265,7 @@
     },
     {
         "RANK": 4784,
-        "TREND": "",
+        "TREND": -923,
         "COMPETITION": "391",
         "KEYWORDS": "bendy and the dark revival",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=bendy%20and%20the%20dark%20revival",
@@ -38545,7 +38545,7 @@
     },
     {
         "RANK": 4819,
-        "TREND": "",
+        "TREND": -926,
         "COMPETITION": 120643,
         "KEYWORDS": "christmas movie",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=christmas%20movie",
@@ -39129,7 +39129,7 @@
     },
     {
         "RANK": 4892,
-        "TREND": "",
+        "TREND": -551,
         "COMPETITION": "752",
         "KEYWORDS": "pez",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=pez",
@@ -39753,7 +39753,7 @@
     },
     {
         "RANK": 4970,
-        "TREND": "",
+        "TREND": -978,
         "COMPETITION": 575388,
         "KEYWORDS": "christmas pet-bandanas",
         "GTREND": "-",
