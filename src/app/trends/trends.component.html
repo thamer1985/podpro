@@ -40,7 +40,9 @@
             <tr>
   
                 <td >{{trend.RANK}}</td>
-                <td>{{trend.TREND}}</td>
+                <td [ngStyle]="{'color': (trend.TREND<0) ? 'rgb(228, 62, 62)': 'rgb(36, 217, 120)' }"><i   [class]="trend.TREND<0 ? 'bi bi-arrow-down-left':'bi bi-arrow-up-right' "  [ngStyle]="{'color': (trend.TREND<0) ?  'rgb(228, 62, 62)':'rgb(36, 217, 120)' }" style="font-size:small">
+                    </i>
+                    {{trend.TREND}} 
                 <td>
                     <div class="d-flex flex-row justify-content-center align-items-center">
                     

@@ -21,7 +21,7 @@
         "COMPETITION": 13431,
         "KEYWORDS": "wednesday addams",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=wednesday%20addams",
-        "TM": 1
+        "TM": -1
     },
     {
         "RANK": 4,
@@ -33,7 +33,7 @@
     },
     {
         "RANK": 5,
-        "TREND": 6,
+        "TREND": -6,
         "COMPETITION": 2404,
         "KEYWORDS": "mike leach",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=mike%20leach",
@@ -65,7 +65,7 @@
     },
     {
         "RANK": 9,
-        "TREND": 3,
+        "TREND": -3,
         "COMPETITION": 1747707,
         "KEYWORDS": "anime",
         "GTREND": "https:\/\/trends.google.com\/trends\/explore?q=anime",
