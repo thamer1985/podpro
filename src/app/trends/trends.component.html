@@ -10,7 +10,7 @@
    
 
 
-    <p-table #dt [value]="trends" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
+    <p-table #dt [value]="trendsFiltred" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
         [(selection)]="selectedProducts" [rowHover]="true" dataKey="id"
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
         <ng-template pTemplate="caption">
@@ -24,26 +24,42 @@
                     placeholder="Filter" />
                 </span>
             </div>
+            <div class="row gap-5">
+                <div class="col">
+                    <h5>Trend: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
+                    <p-slider [(ngModel)]="rangeValues" [range]="true" [min]="min" [max]="max" (onChange)="handleChange($event)">
+                    </p-slider>
+                </div>
+                <div class="col-6">
+                    <h5>Competition: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
+                    <p-slider [(ngModel)]="rangeValues" [range]="true" [min]="min" [max]="max" (onChange)="handleChange($event)">
+                    </p-slider>
+                </div>
+            </div>
         </ng-template>
         <ng-template pTemplate="header">
+
             <tr>
                
                 <th pSortableColumn="RANK">Rank <p-sortIcon field="RANK"></p-sortIcon></th>
                 <th pSortableColumn="TREND">Trend<p-sortIcon field="TREND"></p-sortIcon></th>
                 <th pSortableColumn="COMPETITION" style="width: 120px;">Competition <p-sortIcon field="COMPETITION"></p-sortIcon></th>
                 <th pSortableColumn="KEYWORDS">Keywords <p-sortIcon field="KEYWORDS"></p-sortIcon></th>
-                <th pSortableColumn="GTREND">GTrend<p-sortIcon field="GTREND"></p-sortIcon></th>
+                <!-- <th pSortableColumn="GTREND">GTrend<p-sortIcon field="GTREND"></p-sortIcon></th> -->
                 <th pSortableColumn="TM">TM<p-sortIcon field="TM"></p-sortIcon></th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-trend>
-            
+
             <tr>
   
                 <td >{{trend.RANK}}</td>
-                <td [ngStyle]="{'color': (trend.TREND<0) ? 'rgb(228, 62, 62)': 'rgb(36, 217, 120)' }"><i   [class]="trend.TREND<0 ? 'bi bi-arrow-down-left':'bi bi-arrow-up-right' "  [ngStyle]="{'color': (trend.TREND<0) ?  'rgb(228, 62, 62)':'rgb(36, 217, 120)' }" style="font-size:small">
+                <td  [ngStyle]="{'color':(trend.TREND==0) ?'light-gray' :(trend.TREND<0) ? 'rgb(228, 62, 62)': 'rgb(36, 217, 120)' }">
+                    <i   [class]="trend.TREND==0 ? '':trend.TREND<0 ? 'bi bi-arrow-down-left':'bi bi-arrow-up-right' "  [ngStyle]="{'color': (trend.TREND<0) ?  'rgb(228, 62, 62)':'rgb(36, 217, 120)' }" style="font-size:smaller">
                     </i>
-                    {{trend.TREND}} 
+
+                    <span class="ps-1 fw-bold" [innerText]="trend.TREND==0 ? '—':trend.TREND<0 ? (trend.TREND).toString().substring(1):trend.TREND " ></span>
+                    
                 <td>
                     <div class="d-flex flex-row justify-content-center align-items-center">
                     
@@ -61,7 +77,7 @@
                     </div>
                 </td>
                 <td>{{trend.KEYWORDS}}</td>
-                <td>{{trend.GTREND}}</td>
+                <!-- <td>{{trend.GTREND}}</td> -->
                 <td>
 
                     

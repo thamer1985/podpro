@@ -1,7 +1,7 @@
 
 export interface RedbubbleTrend{
     RANK:number,
-    TREND:string,
+    TREND:number,
     COMPETITION:string,
     KEYWORDS:string,
     GTREND:string,

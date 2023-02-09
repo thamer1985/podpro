@@ -14,6 +14,7 @@ import { NgFor } from '@angular/common';
 export class TrendsComponent implements OnInit {
 // lists
   trends:RedbubbleTrend[]=[];
+  trendsFiltred:RedbubbleTrend[]=[];
   selectedProducts: RedbubbleTrend[]=[];
   //variables
   
@@ -21,11 +22,15 @@ export class TrendsComponent implements OnInit {
   dt: Table | undefined;
 
   h='hydro';
+  rangeValues: number[] = [];
+  min=0;
+  max=0;
 
   constructor(private redbubbleService:RedbubbleService) { }
 
   ngOnInit(): void {
     this.getRedbubbleTrends();
+    
  
      
   }
@@ -34,8 +39,10 @@ export class TrendsComponent implements OnInit {
     this.redbubbleService.gettrends().subscribe(data=>{
       console.log('DATA: ',data);
       this.trends=data;
+      this.trendsFiltred=[...this.trends]
       let a=document.querySelector('card');
       console.log(a?.innerHTML);
+      this.getMinMax(this.trends);
     });
   }
   applyFilterGlobal($event:any, stringVal:string) {
@@ -43,7 +50,34 @@ export class TrendsComponent implements OnInit {
     
     this.dt!.filterGlobal(($event.target as HTMLInputElement).value.toString(), stringVal);
   }
-   
+   getMinMax(trends:RedbubbleTrend[]){
+    this.min=0;
+    this.max=0;
+    trends.forEach(trend=>{
+      if(trend.TREND< this.min){
+        this.min=trend.TREND;
+      }
+      if(trend.TREND> this.max){
+        this.max=trend.TREND;
+      }
+     
+      
+      
+    });
+    
+    this.rangeValues = [this.min,this.max];
+   }
+   handleChange(event:Event ){
+    console.log(this.rangeValues);
+    let trendsF=this.trends.filter(trend=>{
+      return (trend.TREND>this.rangeValues[0] && trend.TREND<this.rangeValues[1]);
+    })
+
+    this.trendsFiltred=[...trendsF];
+    console.log('trends : ',this.trends.length);
+    console.log(this.trendsFiltred.length);
+    
+   }
   } 
 
    
