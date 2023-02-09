@@ -7,10 +7,22 @@
 <!-- <span class="badge text-bg-success bi-archive"> TM</span> -->
 
 <div class="card">
-   
+   <!-- Slider -->
+    <div class="row gap-5">
+        <div class="col">
+            <h5>Trend: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
+            <p-slider [(ngModel)]="rangeValues" [range]="true" [min]="min" [max]="max" (onChange)="handleChange($event)">
+            </p-slider>
+        </div>
+        <div class="col-6">
+            <h5>Competition: {{rangeValuesC[0] + ' - ' + rangeValuesC[1]}}</h5>
+            <p-slider [(ngModel)]="rangeValuesC" [range]="true" [min]="minC" [max]="maxC" (onChange)="handleChange($event)">
+            </p-slider>
+        </div>
+    </div>
 
-
-    <p-table #dt [value]="trendsFiltred" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
+    <!-- Table -->
+    <p-table #dt class="mytable" [value]="trendsFiltred" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
         [(selection)]="selectedProducts" [rowHover]="true" dataKey="id"
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true">
         <ng-template pTemplate="caption">
@@ -24,18 +36,7 @@
                     placeholder="Filter" />
                 </span>
             </div>
-            <div class="row gap-5">
-                <div class="col">
-                    <h5>Trend: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
-                    <p-slider [(ngModel)]="rangeValues" [range]="true" [min]="min" [max]="max" (onChange)="handleChange($event)">
-                    </p-slider>
-                </div>
-                <div class="col-6">
-                    <h5>Competition: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
-                    <p-slider [(ngModel)]="rangeValues" [range]="true" [min]="min" [max]="max" (onChange)="handleChange($event)">
-                    </p-slider>
-                </div>
-            </div>
+            
         </ng-template>
         <ng-template pTemplate="header">
 
@@ -47,6 +48,7 @@
                 <th pSortableColumn="KEYWORDS">Keywords <p-sortIcon field="KEYWORDS"></p-sortIcon></th>
                 <!-- <th pSortableColumn="GTREND">GTrend<p-sortIcon field="GTREND"></p-sortIcon></th> -->
                 <th pSortableColumn="TM">TM<p-sortIcon field="TM"></p-sortIcon></th>
+                <th >Actions</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-trend>
@@ -80,18 +82,14 @@
                 <!-- <td>{{trend.GTREND}}</td> -->
                 <td>
 
-                    
-                    
                     <i class="bi-badge-tm " [ngStyle]="{'color': (trend.TM==0) ? 'rgb(223, 234, 68)': (trend.TM==-1)? 'rgb(228, 62, 62)' : 'rgb(36, 217, 120)'}" style="font-size: large;"> </i>
-                   
-                    
                 </td>
                 
                 <!-- <td><span [class]="'product-badge status-' + trend.inventoryStatus.toLowerCase()">{{trend.inventoryStatus}}</span></td> -->
-                <!-- <td>
-                    <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success p-mr-2" (click)="editProduct(trend)"></button>
-                    <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteProduct(trend)"></button>
-                </td> -->
+                <td>
+                    <button pButton pRipple icon="pi pi-hashtag" class="p-button-rounded p-button-info p-mr-2" (click)="generateTags(trend)"></button>
+                    <!-- <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="createDesign(trend)"></button> -->
+                </td>
             </tr>
         </ng-template>
         <ng-template pTemplate="summary">

@@ -3,6 +3,7 @@ import { RedbubbleTrend } from '../model/redbubbleTrend';
 import { RedbubbleService } from '../services/redbubble.service';
 import { Table } from 'primeng/table';
 import { NgFor } from '@angular/common';
+import { bubbleLink } from '../model/bubbleLink';
 
 
 
@@ -21,18 +22,44 @@ export class TrendsComponent implements OnInit {
   @ViewChild('dt')
   dt: Table | undefined;
 
-  h='hydro';
   rangeValues: number[] = [];
   min=0;
   max=0;
+  rangeValuesC: number[] = [];
+  minC=0;
+  maxC=0;
 
   constructor(private redbubbleService:RedbubbleService) { }
 
   ngOnInit(): void {
     this.getRedbubbleTrends();
-    
- 
+   setTimeout(() => {
+     const el = document.querySelector("style[type='text/css']") as HTMLStyleElement;
+     el.innerHTML="";
+
+   }, 50);
+
+
      
+  }
+
+
+  generateTags(trend:RedbubbleTrend){
+    let taglink="https://www.redbubble.com/fr/shop/?query="+
+    trend.KEYWORDS.toString().split(" ").join("+")+"&sortOrder=trending"
+    console.log(taglink);
+    
+    let link:bubbleLink;
+    link={
+      url:taglink
+    }
+    this.redbubbleService.tagGenerator(link).subscribe(data=>{
+      console.log(data);
+      });
+    
+  }
+  createDesign(trend:RedbubbleTrend){
+
   }
 
   getRedbubbleTrends(){
@@ -40,9 +67,9 @@ export class TrendsComponent implements OnInit {
       console.log('DATA: ',data);
       this.trends=data;
       this.trendsFiltred=[...this.trends]
-      let a=document.querySelector('card');
-      console.log(a?.innerHTML);
+
       this.getMinMax(this.trends);
+      this.getMinMaxCompetition(this.trends);
     });
   }
   applyFilterGlobal($event:any, stringVal:string) {
@@ -60,17 +87,38 @@ export class TrendsComponent implements OnInit {
       if(trend.TREND> this.max){
         this.max=trend.TREND;
       }
-     
-      
-      
     });
     
     this.rangeValues = [this.min,this.max];
    }
+   getMinMaxCompetition(trends:RedbubbleTrend[]){
+    this.minC=0;
+    this.maxC=0;
+    trends.forEach(trend=>{
+      if(trend.TREND< this.minC){
+        this.min=trend.TREND;
+      }
+      if(trend.TREND> this.maxC){
+        this.maxC=trend.TREND;
+      }
+    });
+    
+    this.rangeValuesC = [this.minC,this.maxC];
+   }
    handleChange(event:Event ){
     console.log(this.rangeValues);
     let trendsF=this.trends.filter(trend=>{
-      return (trend.TREND>this.rangeValues[0] && trend.TREND<this.rangeValues[1]);
+      return (trend.TREND>this.rangeValues[0] && trend.TREND<this.rangeValues[1] && parseInt(trend.COMPETITION)>this.rangeValuesC[0] && parseInt(trend.COMPETITION)<this.rangeValuesC[1]);
+    })
+
+    this.trendsFiltred=[...trendsF];
+    console.log('trends : ',this.trends.length);
+    console.log(this.trendsFiltred.length);
+   }
+   handleChangeC(event:Event ){
+    console.log(this.rangeValuesC);
+    let trendsF=this.trends.filter(trend=>{
+      return (parseInt(trend.COMPETITION)>this.rangeValuesC[0] && parseInt(trend.COMPETITION)<this.rangeValuesC[1]);
     })
 
     this.trendsFiltred=[...trendsF];

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { bubbleLink } from '../model/bubbleLink';
+import { RedbubbleService } from '../services/redbubble.service';
 
 @Component({
   selector: 'app-tag-generator',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class TagGeneratorComponent implements OnInit {
 
   trend='stranger things';
-  constructor() { }
+  constructor(private redbubbleService:RedbubbleService) { }
 
   ngOnInit(): void {
     this.scrapeData();
@@ -16,7 +18,16 @@ export class TagGeneratorComponent implements OnInit {
 
   scrapeData(){
 
-
+  // this.redbubbleService.getusers().subscribe(data=>{
+  //   console.log(data);
+  //   });
+  let link:bubbleLink={
+    url:"https://www.redbubble.com/shop/?query=wednesday"
+  };
+  
+  this.redbubbleService.tagGenerator(link).subscribe(data=>{
+    console.log(data);
+    });
   }
 }
 
