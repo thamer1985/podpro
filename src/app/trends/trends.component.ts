@@ -40,12 +40,9 @@ export class TrendsComponent implements OnInit {
    }, 50);
 
 
-     
   }
-
-
   generateTags(trend:RedbubbleTrend){
-    let taglink="https://www.redbubble.com/fr/shop/?query="+
+    let taglink="https://www.redbubble.com/shop/?query="+
     trend.KEYWORDS.toString().split(" ").join("+")+"&sortOrder=trending"
     console.log(taglink);
     
@@ -56,12 +53,9 @@ export class TrendsComponent implements OnInit {
     this.redbubbleService.tagGenerator(link).subscribe(data=>{
       console.log(data);
       });
-    
   }
   createDesign(trend:RedbubbleTrend){
-
   }
-
   getRedbubbleTrends(){
     this.redbubbleService.gettrends().subscribe(data=>{
       console.log('DATA: ',data);
@@ -96,7 +90,7 @@ export class TrendsComponent implements OnInit {
     this.maxC=0;
     trends.forEach(trend=>{
       if(trend.TREND< this.minC){
-        this.min=trend.TREND;
+        this.minC=trend.TREND;
       }
       if(trend.TREND> this.maxC){
         this.maxC=trend.TREND;
@@ -105,6 +99,7 @@ export class TrendsComponent implements OnInit {
     
     this.rangeValuesC = [this.minC,this.maxC];
    }
+
    handleChange(event:Event ){
     console.log(this.rangeValues);
     let trendsF=this.trends.filter(trend=>{
@@ -115,17 +110,18 @@ export class TrendsComponent implements OnInit {
     console.log('trends : ',this.trends.length);
     console.log(this.trendsFiltred.length);
    }
-   handleChangeC(event:Event ){
-    console.log(this.rangeValuesC);
-    let trendsF=this.trends.filter(trend=>{
-      return (parseInt(trend.COMPETITION)>this.rangeValuesC[0] && parseInt(trend.COMPETITION)<this.rangeValuesC[1]);
-    })
 
-    this.trendsFiltred=[...trendsF];
-    console.log('trends : ',this.trends.length);
-    console.log(this.trendsFiltred.length);
+  //  handleChangeC(event:Event ){
+  //   console.log(this.rangeValuesC);
+  //   let trendsF=this.trends.filter(trend=>{
+  //     return (parseInt(trend.COMPETITION)>this.rangeValuesC[0] && parseInt(trend.COMPETITION)<this.rangeValuesC[1]);
+  //   })
+
+  //   this.trendsFiltred=[...trendsF];
+  //   console.log('trends : ',this.trends.length);
+  //   console.log(this.trendsFiltred.length);
     
-   }
+  //  }
   } 
 
    

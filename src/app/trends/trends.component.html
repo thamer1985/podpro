@@ -11,12 +11,12 @@
     <div class="row gap-5">
         <div class="col">
             <h5>Trend: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
-            <p-slider [(ngModel)]="rangeValues" [range]="true" [min]="min" [max]="max" (onChange)="handleChange($event)">
+            <p-slider [(ngModel)]="rangeValues" [range]="true" [step]="100" [min]="min" [max]="max" (onChange)="handleChange($event)">
             </p-slider>
         </div>
         <div class="col-6">
             <h5>Competition: {{rangeValuesC[0] + ' - ' + rangeValuesC[1]}}</h5>
-            <p-slider [(ngModel)]="rangeValuesC" [range]="true" [min]="minC" [max]="maxC" (onChange)="handleChange($event)">
+            <p-slider [(ngModel)]="rangeValuesC" [range]="true" [step]="100" [min]="minC" [max]="maxC" (onChange)="handleChange($event)">
             </p-slider>
         </div>
     </div>
@@ -72,7 +72,7 @@
                         </div>
                         <div>
                             <button class="btn" >
-                                <a href="https://www.redbubble.com/fr/shop/?query={{trend.KEYWORDS.replaceAll(' ','+')}}" target="_blank">
+                                <a href="https://www.redbubble.com/shop/?query={{trend.KEYWORDS.replaceAll(' ','+')}}" target="_blank">
                                 <img src="./../../assets/images/rb.png" width="25" height="25"></a>
                             </button>
                         </div>
