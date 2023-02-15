@@ -28,6 +28,7 @@ export class TrendsComponent implements OnInit {
   rangeValuesC: number[] = [];
   minC=0;
   maxC=0;
+  a=50;
 
   constructor(private redbubbleService:RedbubbleService) { }
 
@@ -56,10 +57,13 @@ export class TrendsComponent implements OnInit {
   }
   createDesign(trend:RedbubbleTrend){
   }
+
   getRedbubbleTrends(){
     this.redbubbleService.gettrends().subscribe(data=>{
       console.log('DATA: ',data);
       this.trends=data;
+      
+      
       this.trendsFiltred=[...this.trends]
 
       this.getMinMax(this.trends);

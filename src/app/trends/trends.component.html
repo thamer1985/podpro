@@ -19,8 +19,15 @@
             <p-slider [(ngModel)]="rangeValuesC" [range]="true" [step]="100" [min]="minC" [max]="maxC" (onChange)="handleChange($event)">
             </p-slider>
         </div>
+        
     </div>
-
+    <div class=" col-2">
+    <div class="progress ">
+        <div class="progress-bar bg-success" role="progressbar" style= "width:60.5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+            ({{a}}%)
+    </div>
+      </div>
+      </div>
     <!-- Table -->
     <p-table #dt class="mytable" [value]="trendsFiltred" [rows]="10" [paginator]="true" [globalFilterFields]="['KEYWORDS','COMPETITION']"
         [(selection)]="selectedProducts" [rowHover]="true" dataKey="id"
@@ -64,11 +71,40 @@
                     
                 <td>
                     <div class="d-flex flex-row justify-content-center align-items-center">
-                    
-                    
-                        <div class="d-flex justify-content-end col-6">
-                            
-                            {{trend.COMPETITION}}
+                       
+                         
+                    <!-- '{"width":a+"%"}' -->
+                        <!-- <div class=" col-6">
+                            <div class="progress">
+                                <div    [class]="   (1*trend.COMPETITION+0)<1000? 'progress-bar bg-success':
+                                                    (1*trend.COMPETITION+0)<50000 && (1*trend.COMPETITION+0)>1000 ? 'progress-bar bg-warning':
+                                                    'progress-bar bg-danger'"
+                                                    
+                                        [ngStyle]="{'width' :  (1*trend.COMPETITION+0)<1000? (100*(1*trend.COMPETITION+0)/1000)*0.5+'%':
+                                                    (1*trend.COMPETITION+0)<50000 && (1*trend.COMPETITION+0)>1000 ? ((100*(1*trend.COMPETITION+0)/50000)+33)*0.75+'%':
+                                                    '75%'}"
+                                        role="progressbar" 
+                                         aria-valuenow="" aria-valuemin="0" aria-valuemax=""></div>
+                              </div>
+                              {{trend.COMPETITION}}
+                        </div> -->
+                        <div class=" col-6">
+                            <div class="progress">
+                                <div    [class]="   (1*trend.COMPETITION+0)<1000? 'progress-bar bg-success':
+                                                    (1*trend.COMPETITION+0)<50000 && (1*trend.COMPETITION+0)>1000 ? 'progress-bar bg-warning':
+                                                        
+                                                    'progress-bar bg-danger'"
+                                                    
+                                        [ngStyle]="{'width' :  (1*trend.COMPETITION+0)<=500? '10%':
+                                        (1*trend.COMPETITION+0)<=1000&& (1*trend.COMPETITION+0)>500 ? '20%':
+                                                    (1*trend.COMPETITION+0)<=2000 && (1*trend.COMPETITION+0)>1000 ? '40%':
+                                                    (1*trend.COMPETITION+0)<=10000 && (1*trend.COMPETITION+0)>2000 ? '60%':
+                                                    (1*trend.COMPETITION+0)<=20000 && (1*trend.COMPETITION+0)>10000 ? '80%':
+                                                '97%'}"
+                                        role="progressbar" 
+                                         aria-valuenow="" aria-valuemin="0" aria-valuemax=""></div>
+                              </div>
+                              {{trend.COMPETITION}}
                         </div>
                         <div>
                             <button class="btn" >
