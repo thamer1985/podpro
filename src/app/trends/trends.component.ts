@@ -91,14 +91,14 @@ export class TrendsComponent implements OnInit {
    }
    getMinMaxCompetition(trends:RedbubbleTrend[]){
     this.minC=0;
-    this.maxC=0;
+    this.maxC=5000;
     trends.forEach(trend=>{
-      if(trend.TREND< this.minC){
-        this.minC=trend.TREND;
+      if(parseInt(trend.COMPETITION)< this.minC){
+        this.minC=parseInt(trend.COMPETITION);
       }
-      if(trend.TREND> this.maxC){
-        this.maxC=trend.TREND;
-      }
+      // if(parseInt(trend.COMPETITION)> this.maxC){
+      //   this.maxC=parseInt(trend.COMPETITION);
+      // }
     });
     
     this.rangeValuesC = [this.minC,this.maxC];

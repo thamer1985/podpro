@@ -11,20 +11,23 @@
     <div class="row gap-5">
         <div class="col">
             <h5>Trend: {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
-            <p-slider [(ngModel)]="rangeValues" [range]="true" [step]="100" [min]="min" [max]="max" (onChange)="handleChange($event)">
+            <p-slider [(ngModel)]="rangeValues" [range]="true" [step]="100" [min]="min" [max]="max" 
+            (onChange)="handleChange($event)">
             </p-slider>
         </div>
         <div class="col-6">
             <h5>Competition: {{rangeValuesC[0] + ' - ' + rangeValuesC[1]}}</h5>
-            <p-slider [(ngModel)]="rangeValuesC" [range]="true" [step]="100" [min]="minC" [max]="maxC" (onChange)="handleChange($event)">
+            <p-slider [(ngModel)]="rangeValuesC" [range]="true" [step]="100" [min]="minC" [max]="maxC" 
+            (onChange)="handleChange($event)">
             </p-slider>
         </div>
         
     </div>
     <div class=" col-2">
-    <div class="progress ">
-        <div class="progress-bar bg-success" role="progressbar" style= "width:60.5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
-            ({{a}}%)
+    <div class="progress " style="height: 5px;">
+        <div class="progress-bar bg-success" role="progressbar"  
+         >
+
     </div>
       </div>
       </div>
@@ -52,6 +55,7 @@
                 <th pSortableColumn="RANK">Rank <p-sortIcon field="RANK"></p-sortIcon></th>
                 <th pSortableColumn="TREND">Trend<p-sortIcon field="TREND"></p-sortIcon></th>
                 <th pSortableColumn="COMPETITION" style="width: 120px;">Competition <p-sortIcon field="COMPETITION"></p-sortIcon></th>
+                <th pSortableColumn="COMPETITION" style="width: 120px;">Number of results<p-sortIcon field="TREND"></p-sortIcon></th>
                 <th pSortableColumn="KEYWORDS">Keywords <p-sortIcon field="KEYWORDS"></p-sortIcon></th>
                 <!-- <th pSortableColumn="GTREND">GTrend<p-sortIcon field="GTREND"></p-sortIcon></th> -->
                 <th pSortableColumn="TM">TM<p-sortIcon field="TM"></p-sortIcon></th>
@@ -59,52 +63,54 @@
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-trend>
-
             <tr>
-  
                 <td >{{trend.RANK}}</td>
                 <td  [ngStyle]="{'color':(trend.TREND==0) ?'light-gray' :(trend.TREND<0) ? 'rgb(228, 62, 62)': 'rgb(36, 217, 120)' }">
-                    <i   [class]="trend.TREND==0 ? '':trend.TREND<0 ? 'bi bi-arrow-down-left':'bi bi-arrow-up-right' "  [ngStyle]="{'color': (trend.TREND<0) ?  'rgb(228, 62, 62)':'rgb(36, 217, 120)' }" style="font-size:smaller">
+                    <i   
+                    [class]="trend.TREND==0 ? '':trend.TREND<0 ? 'bi bi-arrow-down-left':'bi bi-arrow-up-right' "  
+                    [ngStyle]="{'color': (trend.TREND<0) ?  'rgb(228, 62, 62)':'rgb(36, 217, 120)' }" style="font-size:smaller">
                     </i>
+                    <span class="ps-1 fw-bold" 
+                    [innerText]="trend.TREND==0 ? '—':trend.TREND<0 ? (trend.TREND).toString().substring(1):trend.TREND " ></span>
 
-                    <span class="ps-1 fw-bold" [innerText]="trend.TREND==0 ? '—':trend.TREND<0 ? (trend.TREND).toString().substring(1):trend.TREND " ></span>
-                    
+                        <!-- Competition -->
                 <td>
                     <div class="d-flex flex-row justify-content-center align-items-center">
                        
-                         
-                    <!-- '{"width":a+"%"}' -->
-                        <!-- <div class=" col-6">
-                            <div class="progress">
-                                <div    [class]="   (1*trend.COMPETITION+0)<1000? 'progress-bar bg-success':
-                                                    (1*trend.COMPETITION+0)<50000 && (1*trend.COMPETITION+0)>1000 ? 'progress-bar bg-warning':
-                                                    'progress-bar bg-danger'"
-                                                    
-                                        [ngStyle]="{'width' :  (1*trend.COMPETITION+0)<1000? (100*(1*trend.COMPETITION+0)/1000)*0.5+'%':
-                                                    (1*trend.COMPETITION+0)<50000 && (1*trend.COMPETITION+0)>1000 ? ((100*(1*trend.COMPETITION+0)/50000)+33)*0.75+'%':
-                                                    '75%'}"
-                                        role="progressbar" 
-                                         aria-valuenow="" aria-valuemin="0" aria-valuemax=""></div>
-                              </div>
-                              {{trend.COMPETITION}}
-                        </div> -->
-                        <div class=" col-6">
-                            <div class="progress">
-                                <div    [class]="   (1*trend.COMPETITION+0)<1000? 'progress-bar bg-success':
-                                                    (1*trend.COMPETITION+0)<50000 && (1*trend.COMPETITION+0)>1000 ? 'progress-bar bg-warning':
+                        <div class=" col-8 pt-4" >
+                            <div class="progress" style="height: 6px;">
+                                <div    [class]="   (1*trend.COMPETITION+0)<=1000? 'progress-bar ':
+                                                    (1*trend.COMPETITION+0)<2000 && (1*trend.COMPETITION+0)>1000 ? 'progress-bar ':
                                                         
-                                                    'progress-bar bg-danger'"
+                                                    'progress-bar '"
                                                     
-                                        [ngStyle]="{'width' :  (1*trend.COMPETITION+0)<=500? '10%':
-                                        (1*trend.COMPETITION+0)<=1000&& (1*trend.COMPETITION+0)>500 ? '20%':
-                                                    (1*trend.COMPETITION+0)<=2000 && (1*trend.COMPETITION+0)>1000 ? '40%':
-                                                    (1*trend.COMPETITION+0)<=10000 && (1*trend.COMPETITION+0)>2000 ? '60%':
-                                                    (1*trend.COMPETITION+0)<=20000 && (1*trend.COMPETITION+0)>10000 ? '80%':
-                                                '97%'}"
+                                        [ngStyle]="{'background-color' :  (1*trend.COMPETITION+0)<=500? '#48C9B0':
+                                        (1*trend.COMPETITION+0)<=1000&& (1*trend.COMPETITION+0)>500 ? '#52BE80':
+                                                    (1*trend.COMPETITION+0)<=2000 && (1*trend.COMPETITION+0)>1000 ? '#F4D03F':
+                                                    (1*trend.COMPETITION+0)<=10000 && (1*trend.COMPETITION+0)>2000 ? '#F5B041':
+                                                    (1*trend.COMPETITION+0)<=20000 && (1*trend.COMPETITION+0)>10000 ? '#EB984E':
+                                                '#DC7633',
+                                                    'width' :  (1*trend.COMPETITION+0)<=500? '10%':
+                                                        (1*trend.COMPETITION+0)<=1000&& (1*trend.COMPETITION+0)>500 ? '20%':
+                                                                    (1*trend.COMPETITION+0)<=2000 && (1*trend.COMPETITION+0)>1000 ? '40%':
+                                                                    (1*trend.COMPETITION+0)<=10000 && (1*trend.COMPETITION+0)>2000 ? '60%':
+                                                                    (1*trend.COMPETITION+0)<=20000 && (1*trend.COMPETITION+0)>10000 ? '80%':
+                                                                '97%'}"
                                         role="progressbar" 
-                                         aria-valuenow="" aria-valuemin="0" aria-valuemax=""></div>
+                                         aria-valuenow="" aria-valuemin="0" aria-valuemax=""> 
+                                      
+                                    </div>
+                                         
                               </div>
-                              {{trend.COMPETITION}}
+                              <span  class="d-flex justify-content-center" 
+                              [innerText]="(1*trend.COMPETITION+0)<=500? 'Very low':
+                              (1*trend.COMPETITION+0)<=1000&& (1*trend.COMPETITION+0)>500 ? 'Low':
+                                          (1*trend.COMPETITION+0)<=2000 && (1*trend.COMPETITION+0)>1000 ? 'Medium':
+                                          (1*trend.COMPETITION+0)<=10000 && (1*trend.COMPETITION+0)>2000 ? 'High':
+                                          (1*trend.COMPETITION+0)<=20000 && (1*trend.COMPETITION+0)>10000 ? 'Very high':
+                                      'Ultra high'">
+                                
+                            </span>
                         </div>
                         <div>
                             <button class="btn" >
@@ -114,6 +120,7 @@
                         </div>
                     </div>
                 </td>
+                <td>{{(1*trend.COMPETITION+0)}}</td>
                 <td>{{trend.KEYWORDS}}</td>
                 <!-- <td>{{trend.GTREND}}</td> -->
                 <td>
